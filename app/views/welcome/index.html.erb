@@ -249,7 +249,7 @@
             <div class="carousel-caption">
               <h1>Web/App design &amp; production</h1>
               <p class="lead">Need an app or website? We'll build it 100% to your specification. Don't know which is appropriate for what situation? We'll help walk you through the decision.</p>
-              <a class="btn btn-large btn-primary" href="#">More Info</a>
+              <%= link_to 'More Info', '/welcome/services', :class => 'btn btn-large btn-primary' %>
             </div>
           </div>
         </div>
@@ -259,7 +259,7 @@
             <div class="carousel-caption">
               <h1>Mobile Friendly out of the box.</h1>
               <p class="lead">Your users are going to come from a multitude of different sized devices. We'll plan ahead to ensure that your site/app looks and works beautifuly across all of them.</p>
-              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+              <%= link_to 'Learn More', '/welcome/services', :class => 'btn btn-large btn-primary' %>
             </div>
           </div>
         </div>
@@ -269,7 +269,7 @@
             <div class="carousel-caption">
               <h1>E-Commerce.</h1>
               <p class="lead">Wanna sell something? We can set up a fully featured online store which accepts credit cards and is connected with your bank account for fast, easy, and secure transactions.</p>
-              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+              <%= link_to 'Browse gallery', '/welcome/services', :class => 'btn btn-large btn-primary' %>
             </div>
           </div>
         </div>
@@ -279,7 +279,7 @@
             <div class="carousel-caption">
               <h1>Your voice.</h1>
               <p class="lead">The web offers a place to connect with your tribe. We can help you find the right medium for your voice and story.</p>
-              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+              <%= link_to 'See Examples', '/welcome/portfolio', :class => 'btn btn-large btn-primary' %>
             </div>
           </div>
         </div>
@@ -300,19 +300,19 @@
           <img src="../assets/friendly.png">
           <h2>Friendly</h2>
           <p>The tech industry is fast moving but that doesn't stop us from taking the time to explain it in a way that is clear and easy to understand. Our team is approachable and can answer any questions you might have. It can be a stressful world which is why we chill out.</p>
-          <p><a class="btn" href="#">Contact Us &raquo;</a></p>
+          <p><%= link_to 'Contact Us', '/welcome/quote', :class => 'btn' %></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <img src="../assets/professional.png">
           <h2>Professional</h2>
           <p>This is our life's work and we take this very seriously. Consider us your technical team on the ground. We stay up to date on the latest trends and technologies. You focus on running your business and we'll handle the technical side.</p>
-          <p><a class="btn" href="#">Get a Quote&raquo;</a></p>
+          <p><%= link_to 'Get a Quote', '/welcome/quote', :class => 'btn' %></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <img src="../assets/quality.png">
           <h2>Quality</h2>
           <p>You want a website that works the way its supposed to which scales to an endless number of users. We place quality above any other metric.</p>
-          <p><a class="btn" href="#">Learn More&raquo;</a></p>
+          <p><%= link_to 'Learn More', '/welcome/quote', :class => 'btn' %></p>
         </div><!-- /.span4 -->
       </div><!-- /.row -->
 
