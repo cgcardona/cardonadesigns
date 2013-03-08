@@ -3,48 +3,6 @@
         padding-top: 40px;
         padding-bottom: 40px;
       }
-    /* CUSTOMIZE THE NAVBAR
-    -------------------------------------------------- */
-
-    /* Special class on .container surrounding .navbar, used for positioning it into place. */
-    .navbar-wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 10;
-      margin-top: 20px;
-      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-    }
-    .navbar-wrapper .navbar {
-
-    }
-
-    /* Remove border and change up box shadow for more contrast */
-    .navbar .navbar-inner {
-      border: 0;
-      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-              box-shadow: 0 2px 10px rgba(0,0,0,.25);
-    }
-
-    /* Downsize the brand/project name a bit */
-    .navbar .brand {
-      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-      font-size: 16px;
-      font-weight: bold;
-      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-    }
-
-    /* Navbar links: increase padding for taller navbar */
-    .navbar .nav > li > a {
-      padding: 15px 20px;
-    }
-
-    /* Offset the responsive button for proper vertical alignment */
-    .navbar .btn-navbar {
-      margin-top: 10px;
-    }
     </style>
     <div class="container">
 
@@ -52,32 +10,10 @@
       <div class="hero-unit">
         <h1>We Do Design</h1>
         <p>Cardona Designs is a channel for the realization of great ideas.</p>
-        <p><a href="#" class="btn btn-primary btn-large">Contact Us &raquo;</a></p>
+        <p><%= link_to 'Contact Us', '/welcome/quote', :class => 'btn btn-primary btn-large' %></p>
       </div>
 
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="span4">
-          <h2>Design</h2>
-          <p>We think of Design as a first class citizen that works hand in hand
-          with Engineering to create the ultimate user experience.</p>
-          <p><%= link_to 'Contact Us', '/welcome/quote', :class => 'btn' %></p>
-        </div>
-        <div class="span4">
-          <h2>Commerce</h2>
-          <p>Wanna sell something? We can set up a fully featured online store
-          which accepts credit cards and is connected with your bank account for
-          fast, easy, and secure transactions.</p>
-          <p><%= link_to 'Learn More', '/welcome/quote', :class => 'btn' %></p>
-       </div>
-        <div class="span4">
-          <h2>Expression</h2>
-          <p>The web offers a place to connect with your tribe. We can help you
-          find the right medium for your voice and story.</p>
-          <p><%= link_to 'Reach Out', '/welcome/quote', :class => 'btn' %></p>
-        </div>
-      </div>
+      <%= render 'sidebar' %>
 
       <hr>
-
     </div> <!-- /container -->
