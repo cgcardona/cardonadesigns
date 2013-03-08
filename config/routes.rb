@@ -4,6 +4,7 @@ Cardonadesigns::Application.routes.draw do
   get "welcome/services"
   get "welcome/portfolio"
   get "welcome/quote"
+  get "welcome/thoughts"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

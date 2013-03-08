@@ -1,0 +1,299 @@
+    <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>Thoughts</h1>
+        <p>This is examples of our previous work. Like what you see?</p>
+        <p><%= link_to 'Contact Us', '/welcome/quote', :class => 'btn btn-primary btn-large' %></p>
+      </div>
+
+      <div class="row">
+        <div class="span8">
+          <h2 id='object_model'>The Object Model</h2>
+          <p>I&#39;m reading <a href="http://www.amazon.com/Object-Oriented-Analysis-Design-Applications-3rd/dp/020189551X">Object-Oriented Analysis and Design with Applications</a>
+          and just wanted to get down a few quotes from <strong>Chapter 2 The Object Model</strong>.</p>
+          
+          <h2>Foundations of The Object Model</h2>
+          
+          <h3>OOP</h3>
+          
+          <blockquote>
+          <p><strong>Object-oriented programming</strong> is a method of implementation in which programs are
+          organized as cooperative collections of objects, each of which represents an
+          instance of some class, and whose classes are all members of a hierarchy of
+          classes united via inheritance relationships.</p>
+          </blockquote>
+          
+          <h3>OOD</h3>
+          
+          <blockquote>
+          <p><strong>Object-oriented design</strong> is a method of design encompassing the process of
+          object-oriented decomposition and a notation for depicting both logical and
+          physical as well as static and dynamic models of the system under design.</p>
+          </blockquote>
+          
+          <h3>OOA</h3>
+          
+          <blockquote>
+          <p><strong>Object-oriented analysis</strong> is a method of analysis that examines requirements
+          from the perspective of the classes and objects found in the vocabulary of the
+          problem domain.</p>
+          </blockquote>
+          
+          <h2>Four major elements</h2>
+          
+          <p>There are four major elements of The Object Model</p>
+          
+          <h3>Abstraction</h3>
+          
+          <blockquote>
+          <p>An <strong>abstraction</strong> denotes the essential characteristics of an object that
+          distinguish it from all other kinds of objects and thus provide crisply defined
+          conceptual boundaries, relative to the perspective of the viewer.</p>
+          </blockquote>
+          
+          <h3>Encapsulation</h3>
+          
+          <blockquote>
+          <p><strong>Encapsulation</strong> is the process of hiding all of the details of an aobject that do
+          not contribute to its essential characteristics.</p>
+          </blockquote>
+          
+          <h3>Modularity</h3>
+          
+          <blockquote>
+          <p><strong>Modularity</strong> is the property of a system that has been decomposed into a set of
+          cohesive and loosely coupled modules.</p>
+          </blockquote>
+          
+          <h3>Hierarchy</h3>
+          
+          <blockquote>
+          <p><strong>Hierarchy</strong> is a ranking and ordering of abstractions.</p>
+          </blockquote>
+          
+          <h2>Three minor elements</h2>
+          
+          <p>There are three minor elements of The Object Model</p>
+          
+          <h3>Typing</h3>
+          
+          <blockquote>
+          <p><strong>Typing</strong> is the enforcement of the class of an object, such that objects of
+          different types may not be interchanged, or at most, they may be interchanged
+          only in very restricted ways.</p>
+          </blockquote>
+          
+          <h3>Concurrency</h3>
+          
+          <blockquote>
+          <p><strong>Concurrency</strong> is the property that distinguishes an active object from one that
+          is not active.</p>
+          </blockquote>
+          
+          <h3>Persistence</h3>
+          
+          <blockquote>
+          <p><strong>Persistence</strong> is the proeprty of an object through which its existence trancends
+          time (i.e. the object continues to exist after its creator ceases to exists)
+          and/or space (i.e. the object&#39;s location moves from the address space in which
+          it was created).</p>
+          </blockquote>
+          <hr>
+
+          <h2 id='wrapper_methods'>Javascript String Instance HTML Wrapper Methods</h2>
+          <p>While digging around the <code>String</code> docs over on Mozilla I ran across 
+          <a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String#HTML_wrapper_methods">HTML Wrapper Methods</a>.</p>
+          
+          <p>These are a suite of methods which quickly wrap a string in an HTML element. I&#39;ve
+          not actually seen this in practice and the subset of elements (13 in total) are
+          outdated (I&#39;m looking at you <code>&lt;fontsize&gt;</code>) which leads me to believe that though
+          perhaps this was how things were once done that is no longer the case.</p>
+          
+          <p>The Mozilla docs lists HTML Wrapper Methods as <code>Non-standard</code> which further
+          backs up my suspicion. So I wouldn&#39;t recommend actually doing this in practice.
+          This is more just meant to shine some light on a strange feature of Javascript
+          <code>String</code> instances.</p>
+          
+          <p>What do HTML Wrapper methods look like? Let&#39;s have a look.</p>
+          
+          <h2>On to the code</h2>
+          
+          <h3>anchor</h3>
+          <div class="highlight"><pre><code class="javascript"><span class="s1">&#39;foo&#39;</span><span class="p">.</span><span class="nx">anchor</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span>
+          <span class="c1">// &lt;a name=&#39;name&#39;&gt;foo&lt;/a&gt;</span>
+          </code></pre></div>
+          <h3>big</h3>
+          <div class="highlight"><pre><code class="javascript"><span class="s1">&#39;foo&#39;</span><span class="p">.</span><span class="nx">big</span><span class="p">();</span>
+          <span class="c1">// &lt;big&gt;foo&lt;/big&gt;</span>
+          </code></pre></div>
+          <h3>blink</h3>
+          <div class="highlight"><pre><code class="javascript"><span class="s1">&#39;foo&#39;</span><span class="p">.</span><span class="nx">blink</span><span class="p">();</span>
+          <span class="c1">// &lt;blink&gt;foo&lt;/blink&gt;</span>
+          </code></pre></div>
+          <h3>bold</h3>
+          <div class="highlight"><pre><code class="javascript"><span class="s1">&#39;foo&#39;</span><span class="p">.</span><span class="nx">bold</span><span class="p">();</span>
+          <span class="c1">// &lt;b&gt;foo&lt;/b&gt;</span>
+          </code></pre></div>
+          <h3>fixed</h3>
+          <div class="highlight"><pre><code class="javascript"><span class="s1">&#39;foo&#39;</span><span class="p">.</span><span class="nx">fixed</span><span class="p">();</span>
+          <span class="c1">// &lt;tt&gt;foo&lt;/tt&gt;</span>
+          </code></pre></div>
+          <h3>fontcolor</h3>
+          <div class="highlight"><pre><code class="javascript"><span class="s1">&#39;foo&#39;</span><span class="p">.</span><span class="nx">fontcolor</span><span class="p">(</span><span class="nx">color</span><span class="p">);</span>
+          <span class="c1">// &lt;fontcolor color=&#39;color&gt;foo&lt;/fontcolor&gt;</span>
+          </code></pre></div>
+          <h3>fontsize</h3>
+          <div class="highlight"><pre><code class="javascript"><span class="s1">&#39;foo&#39;</span><span class="p">.</span><span class="nx">fontsize</span><span class="p">(</span><span class="nx">size</span><span class="p">);</span>
+          <span class="c1">// &lt;fontsize size=&#39;size&#39;&gt;foo&lt;/fontsize&gt;</span>
+          </code></pre></div>
+          <h3>italics</h3>
+          <div class="highlight"><pre><code class="javascript"><span class="s1">&#39;foo&#39;</span><span class="p">.</span><span class="nx">italics</span><span class="p">();</span>
+          <span class="c1">// &lt;i&gt;foo&lt;/i&gt;</span>
+          </code></pre></div>
+          <h3>link</h3>
+          <div class="highlight"><pre><code class="javascript"><span class="s1">&#39;foo&#39;</span><span class="p">.</span><span class="nx">link</span><span class="p">(</span><span class="nx">url</span><span class="p">);</span>
+          <span class="c1">// &lt;a href=&#39;url&#39;&gt;foo&lt;/a&gt;</span>
+          </code></pre></div>
+          <h3>small</h3>
+          <div class="highlight"><pre><code class="javascript"><span class="s1">&#39;foo&#39;</span><span class="p">.</span><span class="nx">small</span><span class="p">();</span>
+          <span class="c1">// &lt;small&gt;foo&lt;/small&gt;</span>
+          </code></pre></div>
+          <h3>strike</h3>
+          <div class="highlight"><pre><code class="javascript"><span class="s1">&#39;foo&#39;</span><span class="p">.</span><span class="nx">strike</span><span class="p">();</span>
+          <span class="c1">// &lt;strike&gt;foo&lt;/strike&gt;</span>
+          </code></pre></div>
+          <h3>sub</h3>
+          <div class="highlight"><pre><code class="javascript"><span class="s1">&#39;foo&#39;</span><span class="p">.</span><span class="nx">sub</span><span class="p">();</span>
+          <span class="c1">// &lt;sub&gt;foo&lt;/sub&gt;</span>
+          </code></pre></div>
+          <h3>sup</h3>
+          <div class="highlight"><pre><code class="javascript"><span class="s1">&#39;foo&#39;</span><span class="p">.</span><span class="nx">sup</span><span class="p">();</span>
+          <span class="c1">// &lt;sup&gt;foo&lt;/sup&gt;</span>
+          </code></pre></div>
+<h2>Summary</h2>
+
+<p>HTML Wrapper Methods provide an easy way to wrap a <code>String</code> in an HTML element.
+However this only offers a small subset of older HTML elements. Also it&#39;s non
+standard and can easily be done in a standard way like so:</p>
+<div class="highlight"><pre><code class="javascript"><span class="kd">var</span> <span class="nx">p</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">);</span>
+<span class="nx">p</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="s1">&#39;foo&#39;</span><span class="p">;</span>
+<span class="c1">// &lt;p&gt;foo&lt;/p&gt;</span>
+</code></pre></div>
+<p>or with <a href="http://jquery.org">jQuery</a>:</p>
+<div class="highlight"><pre><code class="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;&lt;p&gt;&lt;/p&gt;&#39;</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">);</span>
+<span class="c1">// [&lt;p&gt;foo&lt;/p&gt;]</span>
+</code></pre></div>
+          <hr>
+
+          <h2 id='catch_me'>try to catch me</h2>
+          <p>Javascript try/catch blocks are pretty standard and straight forward. </p>
+          <div class="highlight"><pre><code class="javascript"><span class="k">try</span><span class="p">{</span>
+            <span class="c1">// try some stuff and fail</span>
+            <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s1">&#39;failsauce&#39;</span><span class="p">);</span>
+          <span class="p">}</span>
+          <span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="p">){</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+            <span class="c1">// Error {</span>
+            <span class="c1">//   name    : ErrorName,</span>
+            <span class="c1">//   message : &#39;error message&#39;</span>
+            <span class="c1">// }</span>
+          <span class="p">}</span>
+          </code></pre></div>
+          <p>Note that the catch block passes in an <code>error</code> argument which you can then access
+          the error/exception&#39;s properties to learn more about what exactly when down.</p>
+          
+          <h2>You&#39;re exceptional</h2>
+          
+          <p>You can <code>throw</code> your own custom Objects and then access their properties in the
+          <code>catch</code> block.</p>
+          <div class="highlight"><pre><code class="javascript"><span class="k">try</span><span class="p">{</span>
+            <span class="k">throw</span> <span class="p">{</span>
+              <span class="nx">name</span>    <span class="o">:</span> <span class="s1">&#39;FooError&#39;</span><span class="p">,</span>
+              <span class="nx">message</span> <span class="o">:</span> <span class="s1">&#39;foo message&#39;</span>
+            <span class="p">};</span>
+          <span class="p">}</span>
+          <span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="p">){</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+            <span class="c1">// Error {</span>
+            <span class="c1">//   name    : FooError,</span>
+            <span class="c1">//   message : &#39;foo error&#39;</span>
+            <span class="c1">// }</span>
+          <span class="p">}</span>
+          </code></pre></div>
+          <p>or another way</p>
+          <div class="highlight"><pre><code class="javascript"><span class="kd">function</span> <span class="nx">FooError</span><span class="p">(){</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;FooError&#39;</span><span class="p">;</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">message</span> <span class="o">=</span> <span class="s1">&#39;foo message&#39;</span><span class="p">;</span>
+          <span class="p">}</span>
+          <span class="k">try</span><span class="p">{</span>
+            <span class="k">throw</span> <span class="k">new</span> <span class="nx">FooError</span><span class="p">();</span>
+          <span class="p">}</span>
+          <span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="p">){</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+            <span class="c1">// Error {</span>
+            <span class="c1">//   name    : FooError,</span>
+            <span class="c1">//   message : &#39;foo error&#39;</span>
+            <span class="c1">// }</span>
+          <span class="p">}</span>
+          </code></pre></div>
+          <h2>All together now</h2>
+          <div class="highlight"><pre><code class="javascript"><span class="kd">function</span> <span class="nx">UserException</span><span class="p">(</span><span class="nx">message</span><span class="p">){</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">message</span> <span class="o">=</span> <span class="nx">message</span><span class="p">;</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;UserException&#39;</span><span class="p">;</span>
+          <span class="p">}</span>
+          
+          <span class="kd">function</span> <span class="nx">returnUser</span><span class="p">(</span><span class="nx">userName</span><span class="p">){</span>
+            <span class="kd">var</span> <span class="nx">users</span> <span class="o">=</span> <span class="p">{</span>
+              <span class="s1">&#39;cgcardona&#39;</span> <span class="o">:</span> <span class="p">{</span>
+                <span class="nx">fName</span> <span class="o">:</span> <span class="s1">&#39;carlos&#39;</span><span class="p">,</span>
+                <span class="nx">lName</span> <span class="o">:</span> <span class="s1">&#39;cardona&#39;</span>
+              <span class="p">},</span> 
+              <span class="s1">&#39;sol&#39;</span> <span class="o">:</span> <span class="p">{</span>
+                <span class="nx">fName</span> <span class="o">:</span> <span class="s1">&#39;soljah&#39;</span><span class="p">,</span>
+                <span class="nx">lName</span> <span class="o">:</span> <span class="s1">&#39;cardona&#39;</span>
+              <span class="p">},</span> 
+              <span class="s1">&#39;natalia&#39;</span><span class="o">:</span> <span class="p">{</span>
+                <span class="nx">fName</span> <span class="o">:</span> <span class="s1">&#39;natalie&#39;</span><span class="p">,</span>
+                <span class="nx">lName</span> <span class="o">:</span> <span class="s1">&#39;cardona&#39;</span>
+              <span class="p">}</span>
+            <span class="p">};</span>
+            <span class="k">if</span><span class="p">(</span><span class="nx">users</span><span class="p">[</span><span class="nx">userName</span><span class="p">]</span> <span class="o">!==</span> <span class="kc">undefined</span><span class="p">)</span>
+              <span class="k">return</span> <span class="nx">users</span><span class="p">[</span><span class="nx">userName</span><span class="p">];</span>
+            <span class="k">else</span> <span class="p">{</span>
+              <span class="k">throw</span> <span class="k">new</span> <span class="nx">UserException</span><span class="p">(</span><span class="s1">&#39;User &#39;</span> <span class="o">+</span> <span class="nx">userName</span> <span class="o">+</span> <span class="s1">&#39; is not registered&#39;</span><span class="p">);</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+          
+          <span class="k">try</span><span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">user</span> <span class="o">=</span> <span class="nx">returnUser</span><span class="p">(</span><span class="s1">&#39;natalia&#39;</span><span class="p">);</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">user</span><span class="p">);</span>
+            <span class="c1">// Object {fName: &quot;natalie&quot;, lName: &quot;cardona&quot;} </span>
+          
+            <span class="kd">var</span> <span class="nx">user</span> <span class="o">=</span> <span class="nx">returnUser</span><span class="p">(</span><span class="s1">&#39;foobar&#39;</span><span class="p">);</span>
+          <span class="p">}</span>
+          <span class="k">catch</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span>
+            <span class="c1">// UserException {message: &quot;User foobar is not registered&quot;, name: &quot;UserException&quot;} </span>
+          <span class="p">}</span>
+          </code></pre></div>
+          <h2>More info</h2>
+          
+          <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Statements/try...catch">try/catch docs on Mozilla</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Statements/throw">throw docs on Mozilla</a></li>
+          </ul>
+          <hr>
+
+        </div>
+        <%= render 'sidebar' %>
+      </div>
+
+      <hr>
+    </div> <!-- /container -->
