@@ -10,4 +10,7 @@ class WelcomeController < ApplicationController
 
   def quote
   end
+
+  def thoughts
+  end
 end

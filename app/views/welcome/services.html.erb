@@ -13,7 +13,24 @@
         <p><%= link_to 'Contact Us', '/welcome/quote', :class => 'btn btn-primary btn-large' %></p>
       </div>
 
-      <%= render 'sidebar' %>
+      <div class="row">
+        <div class="span8">
+          <h2>Design</h2>
+          <p>We think of Design as a first class citizen that works hand in hand
+          with Engineering to create the ultimate user experience.</p>
+          <p><%= link_to 'Contact Us', '/welcome/quote', :class => 'btn' %></p>
+          <h2>E-Commerce</h2>
+          <p>Wanna sell something? We can set up a fully featured online store
+          which accepts credit cards and is connected with your bank account for
+          fast, easy, and secure transactions.</p>
+          <p><%= link_to 'Contact Us', '/welcome/quote', :class => 'btn' %></p>
+          <h2>Expression</h2>
+          <p>The web offers a place to connect with your tribe. We can help you
+          find the right medium for your voice and story.</p>
+          <p><%= link_to 'Contact Us', '/welcome/quote', :class => 'btn' %></p>
+        </div>
+        <%= render 'sidebar' %>
+      </div>
 
       <hr>
     </div> <!-- /container -->
