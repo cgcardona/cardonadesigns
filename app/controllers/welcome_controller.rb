@@ -17,6 +17,12 @@ class WelcomeController < ApplicationController
   def amelia
   end
 
+  def cerulean
+  end
+
+  def cosmo
+  end
+
   def spruce 
   end
 end

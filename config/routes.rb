@@ -6,6 +6,8 @@ Cardonadesigns::Application.routes.draw do
   get "welcome/quote"
   get "welcome/thoughts"
   get "welcome/amelia"
+  get "welcome/cerulean"
+  get "welcome/cosmo"
   get "welcome/spruce"
 
   # The priority is based upon order of creation:
