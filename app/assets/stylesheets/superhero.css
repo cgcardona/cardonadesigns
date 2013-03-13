@@ -4398,13 +4398,7 @@ input[type="submit"].btn.btn-mini {
   width: auto;
 }
 
-.nav-collapse.collapse {
-  height: auto;
-  overflow: visible;
-}
-
 .navbar .brand {
-  display: block;
   float: left;
   padding: 25px 20px 25px;
   margin-left: -20px;
@@ -4633,7 +4627,6 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar .btn-navbar {
-  display: none;
   float: right;
   padding: 7px 10px;
   margin-right: 5px;
