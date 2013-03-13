@@ -13,4 +13,10 @@ class WelcomeController < ApplicationController
 
   def thoughts
   end
+
+  def amelia
+  end
+
+  def spruce 
+  end
 end
