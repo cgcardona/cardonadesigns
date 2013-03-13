@@ -5,6 +5,18 @@ Cardonadesigns::Application.routes.draw do
   get "welcome/portfolio"
   get "welcome/quote"
   get "welcome/thoughts"
+  get "welcome/amelia"
+  get "welcome/cerulean"
+  get "welcome/cosmo"
+  get "welcome/cyborg"
+  get "welcome/journal"
+  get "welcome/readable"
+  get "welcome/simplex"
+  get "welcome/slate"
+  get "welcome/spacelab"
+  get "welcome/spruce"
+  get "welcome/superhero"
+  get "welcome/united"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
