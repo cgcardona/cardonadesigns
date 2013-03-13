@@ -23,6 +23,30 @@ class WelcomeController < ApplicationController
   def cosmo
   end
 
+  def cyborg
+  end
+
+  def journal
+  end
+
+  def readable
+  end
+
+  def simplex
+  end
+
+  def slate
+  end
+
+  def spacelab
+  end
+
   def spruce 
+  end
+
+  def superhero
+  end
+
+  def united
   end
 end
