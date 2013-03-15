@@ -67,6 +67,7 @@
       <!-- FOOTER -->
       <div class="container">
         <footer>
+        <p>Cardona Designs - San Francisco, Ca - Phone: <a href="tel:+18313257406">831.325.7406</a> - cgcardona(at)gmail.com</p>
           <p class="pull-right"><a href="#">Back to top</a></p>
           <p><a href='http://creativecommons.org/licenses/by-sa/3.0/deed.en_US'>Creative Commons</a></p>
         </footer>
@@ -149,21 +150,18 @@
           max-width: 40%;
           margin: 0 auto 20px;
         }
+        .carousel-caption{
+          margin-left:15px;
+        }
       }
 
-
       @media (max-width: 767px) {
-
         .navbar-inner {
           margin: -20px;
         }
-
         .carousel {
           margin-left: -20px;
           margin-right: -20px;
-        }
-        .carousel .container {
-
         }
         .carousel .item {
           height: 300px;
@@ -183,11 +181,9 @@
         .carousel-caption .btn {
           font-size: 18px;
         }
-
         .marketing .span4 + .span4 {
           margin-top: 40px;
         }
-
         .featurette-heading {
           font-size: 30px;
         }
@@ -195,12 +191,9 @@
           font-size: 18px;
           line-height: 1.5;
         }
-
       }
       </style>
 
-    <!-- Le javascript ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
   <%= javascript_include_tag "application" %>
     <script>
       !function ($) {
