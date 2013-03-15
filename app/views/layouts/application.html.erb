@@ -193,6 +193,37 @@
         }
       }
       </style>
+      <style>
+      #friendly, #professional, #quality {
+        background-size: 140px 140px;
+        height: 140px;
+        margin:auto;
+        width: 140px;
+      }
+      #friendly {
+        background-image: url(/assets/friendly.png);
+      }
+      #professional {
+        background-image: url(/assets/professional.png);
+      }
+      #quality{
+        background-image: url(/assets/quality.png);
+      }
+
+      @media 
+      (-webkit-min-device-pixel-ratio: 2), 
+      (min-resolution: 192dpi){ 
+        #friendly {
+          background-image: url(/assets/friendly2X.png);
+        }
+        #professional {
+          background-image: url(/assets/professional2X.png);
+        }
+        #quality{
+          background-image: url(/assets/quality2X.png);
+        }
+      }
+      </style>
 
   <%= javascript_include_tag "application" %>
     <script>
