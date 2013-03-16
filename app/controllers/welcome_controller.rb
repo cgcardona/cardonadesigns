@@ -3,6 +3,20 @@ class WelcomeController < ApplicationController
   end
 
   def services
+    @themes = [
+      ['Amelia', 'amelia'],
+      ['Cerulean', 'cerulean'],
+      ['Cosmo', 'cosmo'],
+      ['Cyborg', 'cyborg'],
+      ['Journal', 'journal'],
+      ['Readable', 'readable'],
+      ['Simplex', 'simplex'],
+      ['Slate', 'slate'],
+      ['Spacelab', 'spacelab'],
+      ['Spruce', 'spruce'],
+      ['Superhero', 'superhero'],
+      ['United', 'united']
+    ]
   end
 
   def portfolio
