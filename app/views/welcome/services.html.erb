@@ -1,12 +1,7 @@
-    <style type='text/css'>
-      body {
-        padding-top: 40px;
-        padding-bottom: 40px;
-      }
+    <%= stylesheet_link_tag 'site_extras', :media => 'all' %>
     </style>
     <div class='container'>
 
-      <!-- Main hero unit for a primary marketing message or call to action -->
       <div class='hero-unit'>
         <h1>We Do Design</h1>
         <p>Cardona Designs is a channel for the realization of great ideas.</p>
@@ -93,18 +88,9 @@
           <p>If you have a static site&mdash;meaning you have one set of content
           which won't need to be updated we can quickly build a site. The following themes are available.</p>
           <ul>
-            <li><%= link_to 'Amelia', '/welcome/amelia' %></li>
-            <li><%= link_to 'Cerulean', '/welcome/cerulean' %></li>
-            <li><%= link_to 'Cosmo', '/welcome/cosmo' %></li>
-            <li><%= link_to 'Cyborg', '/welcome/cyborg' %></li>
-            <li><%= link_to 'Journal', '/welcome/journal' %></li>
-            <li><%= link_to 'Readable', '/welcome/readable' %></li>
-            <li><%= link_to 'Simplex', '/welcome/simplex' %></li>
-            <li><%= link_to 'Slate', '/welcome/slate' %></li>
-            <li><%= link_to 'Spacelab', '/welcome/spacelab' %></li>
-            <li><%= link_to 'Spruce', '/welcome/spruce' %></li>
-            <li><%= link_to 'Superhero', '/welcome/superhero' %></li>
-            <li><%= link_to 'United', '/welcome/united' %></li>
+            <% @themes.each do |x| %>
+              <li><%= link_to x[0], '/welcome/' + x[1] %></li>
+            <% end %>
           </ul>
           <h3>Credit</h3>
           <p>We're able to offer this option because we've gathered great
